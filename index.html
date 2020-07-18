@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+    <title>JS Typing Speed Test</title>
+    <script src="script.js" async></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="masthead">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark special-color-dark bg-primary">
+
+            <!-- Navbar brand -->
+            <a class="navbar-brand text-uppercase text-monospace" href="#">Test Your Typing Speed</a>
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2"
+                    aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+
+                <!-- Links -->
+                <div class="navbar-nav mr-auto">
+                    <!-- Features -->
+                    <div class="nav-item dropdown mega-dropdown active">
+                        <a class="nav-link dropdown-toggle text-uppercase text-monospace" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Game rules
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <div class="dropdown-menu w-100 mega-menu v-2 z-depth-1 special-color py-5 px-3"
+                             aria-labelledby="navbarDropdownMenuLink2">
+                            <div class="">
+                                <div class="sub-menu mb-xl-0">
+                                    <h6 class="text-center text-white text-monospace">This is a typing test. Your goal is to duplicate the provided text, EXACTLY, in the field below. The timer starts when you start typing, and only stops when you match this text exactly. You can also press change text to enter your own challenge. Good Luck!</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="main  d-flex">
+        <div class="test-area col-7">
+            <div id="origin-text">
+                <p class="text-center text-white">The text to test.</p>
+            </div><!-- #origin-text -->
+
+            <div class="test-wrapper">
+                <textarea id="test-area" name="textarea" rows="6" placeholder="The clock starts when you start typing."></textarea>
+            </div><!-- .test-wrapper -->
+
+            <div class="meta">
+                <section id="clock">
+                    <div class="timer text-white">00:00:00</div>
+                </section>
+
+                <button class="btn btn-outline-primary btn-rounded waves-effect text-white" id="reset">Start over</button>
+                <button class="btn btn-outline-primary btn-rounded waves-effect text-white" id="change">Change text</button>
+            </div><!-- .meta -->
+
+        </div><!-- .test-area -->
+
+        <!-- Score Table -->
+        <div class="scoresTable col-5">
+                <div class="d-flex justify-content-center">
+                    <h3 class="text-monospace text-white" id="naslovTabele">Leaderboards</h3>
+                    <table class="table table-lg table-bordered text-white">
+                        <thead>
+                    <tr>
+                            <th></th>
+                            <th>Username</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                    <tr>
+                            <th scope="row">1</th>
+                            <td class="user1">Mark</td>
+                            <td class="score1">Otto</td>
+                        </tr>
+                    <tr>
+                            <th scope="row">2</th>
+                            <td class="user2">Jacob</td>
+                            <td class="score2">Thornton</td>
+                        </tr>
+                    <tr>
+                            <th scope="row">3</th>
+                            <td class="user3">Jacob</td>
+                            <td class="score3">Thornton</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+
+</html>
